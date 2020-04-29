@@ -297,7 +297,7 @@
             <div class="mbr-testimonial p-3 align-center col-12 col-md-6">
               <div class="row">
                 <div class="container fluid">
-<form name="bright" method="POST" data-netlify="true" id="forms" action="">
+<form name="bright" method="POST" data-netlify="true" id="forms">
 				<div class="form-group">
 					<label for="quantity">Qty</label>
 					<select class="form-control" id="quantity" onchange="calcTotal()" name="quantity" required="">
@@ -354,8 +354,8 @@
 					<input type="submit" id="submit" class="form-control btn btn-md btn-primary" value="Submit">
 				</div>
 			</form>
-          <!--<br><p><strong>Step 2. Make Payment</strong></p>
-				<a href="" id="pay"><img src="https://www.payfast.co.za/images/buttons/dark-small-paynow.png" width="165" height="36" alt="Pay" title="Pay Now with PayFast"></a>-->
+          <br><p><strong>Step 2. Make Payment</strong></p>
+				<a href="" id="pay"><img src="https://www.payfast.co.za/images/buttons/dark-small-paynow.png" width="165" height="36" alt="Pay" title="Pay Now with PayFast"></a>
 	</div>	
               </div>
 	<script>
@@ -389,7 +389,7 @@
           	document.getElementById("total").setAttribute("value",totalP);
 			str_num = document.getElementById("total").value;
 			str_link = "https://www.payfast.co.za/eng/process?cmd=_paynow&receiver=15263013&item_name=Tooth+Whitening+Pen&amount="+str_num;
-			document.getElementById("forms").setAttribute("action",str_link);
+			document.getElementById("pay").href=str_link;
         };
 	</script> 
           		</div>
